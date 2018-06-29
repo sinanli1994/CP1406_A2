@@ -1,0 +1,133 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/fish-tastic.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="UTF-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- InstanceEndEditable -->
+<link href="CSS/fish_tastic.css" rel="stylesheet" type="text/css">
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->    
+</head>
+
+<body>
+
+<div id="Logo_div" align="center">
+ <a href="index.html"><img src="Image/logo.png" alt="fish" id="logoOfFish"></a>
+  <span id="Logo"><em><strong>Fish &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Tastic</strong></em></span>
+   <div class="social_media">
+     <span>Visit us :</span>
+     <a href="https://www.facebook.com/Fish-Tastic-552027478286738/?skip_nax_wizard=true"><img src="Image/social_facebook_box_blue.png" alt="Facebook" width="30" height="30"></a>
+     <a href="https://www.instagram.com/weare_fishtastic/"><img src="Image/Multi-Color_Logo_thumbnail200.png" alt="Instagram" width="30" height="30"></a> 
+     <a href="https://twitter.com/?lang=en"><img src="Image/Twitter-icon.png" alt="Twitter" width="30" height="30"></a> 
+   </div> 
+<form id="search_bar"> 
+ <input type="text" name="input" style="border:1px solid; border-style:inset">
+ <input type="button" value="search">
+</form>
+</div>
+<div>
+<ul id="Nav_bar_left">
+<li><a class="Nav_link" href="index.html"><img src="Image/home.png" alt="Home"/></a></li>
+<li><a class="Nav_link" href="about_us.html"><img src="Image/about_us.png" alt="about us"/></a></li>
+<li><a class="Nav_link" href="events.html"><img src="Image/events.png"  alt="events"/></a></li>
+</ul>
+
+
+<ul id="Nav_bar_right">
+<li><a class="Nav_link" href="contact%20us.html"><img src="Image/Contact_us.png"  alt="Contact us" height="40"/></a></li>
+<div id="drop">
+<li><a id="dropbtn" href="#"><img src="Image/services.png" alt="Services"/></a>
+   <ul class="dropdown">
+      <li class="drop_block"><a class="dropdown_content" href="#">Delivery</a></li>
+      <li class="drop_block"><a class="dropdown_content" href="#">Consultation</a></li>
+      <li class="drop_block"><a class="dropdown_content" href="#">Exchange</a></li>
+   </ul>
+</li>
+</div>
+
+<li><a class="Nav_link" href="faq.html"><img src="Image/faq.png" alt="FAQ"/></a></li>
+</ul>
+</div>
+
+<!-- InstanceBeginEditable name="content" -->
+<div id="Sec_body">
+  <hr style="color:#B56E07">
+  
+      <form style="color:#FFFFFF" action="#" method="get" onSubmit="return validateForm()">
+      <table width="600" border="1" align="center" style="text-align:center">
+        <tbody>
+         <tr>
+         <td colspan="2"><h2>Feedback</h2></td>
+         </tr>
+         <tr>
+         <td>Title</td>
+         <td><input type="text" style="width:400px;" id="titleOfFeedback"></td>
+         </tr>
+         <tr>
+         <td>Rate our service</td>
+         <td><input type="radio" name="rate" value="1">1⭐
+             <input type="radio" name="rate" value="2">2⭐
+             <input type="radio" name="rate" value="3">3⭐
+             <input type="radio" name="rate" value="4">4⭐
+             <input type="radio" name="rate" value="5">5⭐
+      
+        </td>
+        </tr>
+        <tr>
+        <td>Suggestion</td>
+        <td><textarea style="width:400px; height:400px" id="suggestion"></textarea></td>
+        </tr>
+    
+        <tr>
+        <td colspan="2"><input type="submit" value="send">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="reset"></td>
+        </tr>
+       </tbody>
+       </table> 
+       </form>
+       </div>
+
+<script type="text/javascript">
+function validateForm(){
+var title = document.getElementById("titleOfFeedback").value;
+var star = document.getElementsByName("rate");
+var sug = document.getElementById("suggestion").value;
+var getStar = 0;
+
+for(var i=0;i<star.length;i++){
+                    if(star[i].checked){
+                        getStar = i+1;
+                        break;
+                    }
+                }
+
+
+if (title == null || title =="" || sug ==null || sug =="")
+  {
+  alert("Please fill the form!");
+  return false;
+  }
+ 
+ var r = confirm("Do you want to submit to us?\nYour feedback title:("+ title +")\nYour evaluation: (" + getStar + " stars)\nYour  suggestion: (" + sug+")") 
+     if( r == true){
+		    alert("Thank you for your feedback!!") 
+			 window.location.href='index.html' 
+			 return false;
+		 }else {
+			 
+			 return false;
+			 }
+ 
+ 
+ 
+ 
+}
+ </script>
+<!-- InstanceEndEditable -->
+
+  
+<div id="footer">
+<hr>
+<p>Group Three© 2016</p></div>
+</body>
+<!-- InstanceEnd --></html>

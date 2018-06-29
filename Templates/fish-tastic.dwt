@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- TemplateEndEditable -->
+<link href="../CSS/fish_tastic.css" rel="stylesheet" type="text/css">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->    
+</head>
+
+<body>
+
+<div id="Logo_div" align="center">
+ <a href="../index.html"><img src="../Image/logo.png" alt="fish" id="logoOfFish"></a>
+  <span id="Logo"><em><strong>Fish &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Tastic</strong></em></span>
+   <div class="social_media">
+     <span>Visit us :</span>
+     <a href="https://www.facebook.com/Fish-Tastic-552027478286738/?skip_nax_wizard=true"><img src="../Image/social_facebook_box_blue.png" alt="Facebook" width="30" height="30"></a>
+     <a href="https://www.instagram.com/weare_fishtastic/"><img src="../Image/Multi-Color_Logo_thumbnail200.png" alt="Instagram" width="30" height="30"></a> 
+     <a href="https://twitter.com/?lang=en"><img src="../Image/Twitter-icon.png" alt="Twitter" width="30" height="30"></a> 
+   </div> 
+<form id="search_bar"> 
+ <input type="text" name="input" style="border:1px solid; border-style:inset">
+ <input type="button" value="search">
+</form>
+</div>
+<div>
+<ul id="Nav_bar_left">
+<li><a class="Nav_link" href="../index.html"><img src="../Image/home.png" alt="Home"/></a></li>
+<li><a class="Nav_link" href="../about_us.html"><img src="../Image/about_us.png" alt="about us"/></a></li>
+<li><a class="Nav_link" href="../events.html"><img src="../Image/events.png"  alt="events"/></a></li>
+</ul>
+
+
+<ul id="Nav_bar_right">
+<li><a class="Nav_link" href="../contact us.html"><img src="../Image/Contact_us.png"  alt="Contact us" height="40"/></a></li>
+<div id="drop">
+<li><a id="dropbtn" href="#"><img src="../Image/services.png" alt="Services"/></a>
+   <ul class="dropdown">
+      <li class="drop_block"><a class="dropdown_content" href="#">Delivery</a></li>
+      <li class="drop_block"><a class="dropdown_content" href="#">Consultation</a></li>
+      <li class="drop_block"><a class="dropdown_content" href="#">Exchange</a></li>
+   </ul>
+</li>
+</div>
+
+<li><a class="Nav_link" href="../faq.html"><img src="../Image/faq.png" alt="FAQ"/></a></li>
+</ul>
+</div>
+
+<!-- TemplateBeginEditable name="content" -->
+<div id="Sec_body">
+  <hr style="color:#B56E07">
+  <div>join us(use two div and orientation is horizon) </div>
+  <div> this is a gallary</div>
+  
+</div>
+<!-- TemplateEndEditable -->
+
+  
+<div id="footer">
+<hr>
+<p>Group Three© 2016</p></div>
+</body>
+</html>

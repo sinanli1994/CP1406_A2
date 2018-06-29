@@ -1,0 +1,398 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/fish-tastic.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="UTF-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<script type="text/javascript">
+  function showPriceOfSalt(){  
+	 var priceOfSalt = document.getElementById("selSalt").value;	 
+       if  (priceOfSalt == "S01"){
+		   document.getElementById("showPriceOfSalt").innerHTML = "31.40"
+         }else if (priceOfSalt == "S02"){
+		  document.getElementById("showPriceOfSalt").innerHTML = "32.00"
+         }else if (priceOfSalt == "S03"){
+		  document.getElementById("showPriceOfSalt").innerHTML = "70.00"
+         }else if (priceOfSalt == "S04"){
+		  document.getElementById("showPriceOfSalt").innerHTML = "30.00"
+         }
+	 
+    }
+	function showPriceOfFresh(){ 
+	
+	 var priceOfFresh = document.getElementById("selectFresh").value;	
+		if  (priceOfFresh == "A01"){
+		   document.getElementById("showPriceOfFresh").innerHTML = "0.80"
+         }else if (priceOfFresh == "A02"){
+		  document.getElementById("showPriceOfFresh").innerHTML = "1.00"
+         }else if (priceOfFresh == "A03"){
+		  document.getElementById("showPriceOfFresh").innerHTML = "1.30"
+         }else if (priceOfFresh == "A04"){
+		  document.getElementById("showPriceOfFresh").innerHTML = "0.80"
+         }
+	
+	 }
+ function showPriceOfFood(){ 
+	
+	 var priceOfFood= document.getElementById("selectFood").value;	
+		if  (priceOfFood == "B01"){
+		   document.getElementById("showPriceOfFood").innerHTML = "6.50"
+         }else if (priceOfFood == "B02"){
+		  document.getElementById("showPriceOfFood").innerHTML = "11.99"
+         }else if (priceOfFood == "B03"){
+		  document.getElementById("showPriceOfFood").innerHTML = "2.99"
+         }
+	 }
+	 
+ function showPriceOfMed(){ 
+	
+	 var priceOfMed = document.getElementById("selectMed").value;	
+		if  (priceOfMed == "M01"){
+		  document.getElementById("showPriceOfMed").innerHTML = "43.00"
+         }else if (priceOfMed == "M02"){
+		  document.getElementById("showPriceOfMed").innerHTML = "2.99"
+         }else if (priceOfMed == "M03"){
+		  document.getElementById("showPriceOfMed").innerHTML = "8.99"
+         }
+	 }
+ function showPriceOfTank(){ 
+	
+	 var priceOfTank = document.getElementById("selectTank").value;	
+		if  (priceOfTank == "T01"){
+		  document.getElementById("showPriceOfTank").innerHTML = "680.00"
+         }else if (priceOfTank == "T02"){
+		  document.getElementById("showPriceOfTank").innerHTML = "349.00"
+         }else if (priceOfTank == "T03"){
+		  document.getElementById("showPriceOfTank").innerHTML = "39.99"
+         }else if (priceOfTank == "T04"){
+		  document.getElementById("showPriceOfTank").innerHTML = "18.99"
+         }
+	 }
+  function showPriceOfAqu(){ 
+	
+	 var priceOfAqu = document.getElementById("selectAqu").value;	
+		if  (priceOfAqu == "D01"){
+		  document.getElementById("showPriceOfAqu").innerHTML = "17.99"
+         }else if (priceOfAqu == "D02"){
+		  document.getElementById("showPriceOfAqu").innerHTML = "3.00"
+         }else if (priceOfAqu == "D03"){
+		  document.getElementById("showPriceOfAqu").innerHTML = "14.99"
+         }
+	 }
+	
+	
+	
+function plusNumber(number){
+	    switch(number){
+			case 1:		
+			       var num  = document.getElementById("numOfSalt").textContent;	
+		           var y = Number(num)
+		           var x = (y + 1).toString()
+	               document.getElementById("numOfSalt").innerHTML = "" +x;
+			  break;
+			case 2:
+			       var num  = document.getElementById("numOfFresh").textContent;	
+		           var y = Number(num)
+		           var x = (y + 1).toString()
+	               document.getElementById("numOfFresh").innerHTML = "" +x;
+			  break;
+			case 3:
+			       var num = document.getElementById("numOfFood").textContent;	
+		           var y = Number(num)
+		           var x = (y + 1).toString()
+	               document.getElementById("numOfFood").innerHTML = "" +x;
+			  break;
+			case 4:	
+			       var num = document.getElementById("numOfMed").textContent;	
+		           var y = Number(num)
+		           var x = (y + 1).toString()
+	               document.getElementById("numOfMed").innerHTML = "" +x;
+			  break;
+			case 5:	
+			       var num = document.getElementById("numOfTank").textContent;	
+		           var y = Number(num)
+		           var x = (y + 1).toString()
+	               document.getElementById("numOfTank").innerHTML = "" +x;
+			break;		
+			case 6:	
+			       var num = document.getElementById("numOfAqu").textContent;	
+		           var y = Number(num)
+		           var x = (y + 1).toString()
+	               document.getElementById("numOfAqu").innerHTML = "" +x;
+			break;	
+			} 
+	}
+function minusNumber(number){
+	    switch(number){
+			case 1:		
+			       var num = document.getElementById("numOfSalt").textContent;	
+		           var y = Number(num)
+	                if( y > 0 ){
+		              var x = (y - 1).toString()
+	                 document.getElementById("numOfSalt").innerHTML = "" +x;
+	                 }
+			  break;
+			case 2:
+			        var num = document.getElementById("numOfFresh").textContent;	
+		           var y = Number(num)
+	                if( y > 0 ){
+		              var x = (y - 1).toString()
+	                 document.getElementById("numOfFresh").innerHTML = "" +x;
+	                 }
+			  break;
+			case 3:
+			      var num = document.getElementById("numOfFood").textContent;	
+		           var y = Number(num)
+	                if( y > 0 ){
+		              var x = (y - 1).toString()
+	                 document.getElementById("numOfFood").innerHTML = "" +x;
+	                 }
+			  break;
+			case 4:	
+			        var num = document.getElementById("numOfMed").textContent;	
+		           var y = Number(num)
+	                if( y > 0 ){
+		              var x = (y - 1).toString()
+	                 document.getElementById("numOfMed").innerHTML = "" +x;
+	                 }
+			  break;
+			case 5:	
+			       var num = document.getElementById("numOfTank").textContent;	
+		           var y = Number(num)
+	                if( y > 0 ){
+		              var x = (y - 1).toString()
+	                 document.getElementById("numOfTank").innerHTML = "" +x;
+	                 }
+			break;		
+			case 6:	
+			       var num = document.getElementById("numOfAqu").textContent;	
+		           var y = Number(num)
+	                if( y > 0 ){
+		              var x = (y - 1).toString()
+	                  document.getElementById("numOfAqu").innerHTML = "" +x;
+	                 }
+			break;		
+			} 
+	}
+	
+function resetQuantity(){
+		  document.getElementById("numOfSalt").innerHTML = "0";
+		  document.getElementById("numOfFresh").innerHTML = "0";
+		  document.getElementById("numOfFood").innerHTML = "0";
+		  document.getElementById("numOfMed").innerHTML = "0";
+		  document.getElementById("numOfTank").innerHTML = "0";
+		  document.getElementById("numOfAqu").innerHTML = "0";	
+		  
+		document.getElementById("priceOfSalt").innerHTML = "";
+		document.getElementById("priceOfFresh").innerHTML = "";
+		document.getElementById("priceOfFood").innerHTML = "";
+		document.getElementById("priceOfMed").innerHTML = "";
+		document.getElementById("priceOfTank").innerHTML = "";
+		document.getElementById("priceOfAqu").innerHTML = "";
+	    document.getElementById("totalPrice").innerHTML = "0"
+		
+		}
+function calcuPrice(){
+	    var n1 =  Number(document.getElementById("numOfSalt").textContent)
+		var n2 =  Number(document.getElementById("numOfFresh").textContent)
+		var n3 =  Number(document.getElementById("numOfFood").textContent)
+	    var n4 =  Number(document.getElementById("numOfMed").textContent)
+	    var n5 =  Number(document.getElementById("numOfTank").textContent)
+	    var n6 =  Number(document.getElementById("numOfAqu").textContent)
+		
+	    var p1 =  Number(document.getElementById("showPriceOfSalt").textContent)
+		var p2 =  Number(document.getElementById("showPriceOfFresh").textContent)
+		var p3 =  Number(document.getElementById("showPriceOfFood").textContent)
+		var p4 =  Number(document.getElementById("showPriceOfMed").textContent)
+		var p5 =  Number(document.getElementById("showPriceOfTank").textContent)
+		var p6 =  Number(document.getElementById("showPriceOfAqu").textContent)
+		
+		var t1 = n1 * p1
+		document.getElementById("priceOfSalt").innerHTML = ""+t1+""
+		var t2 = n2 * p2
+		document.getElementById("priceOfFresh").innerHTML = t2+""
+		var t3 = n3 * p3
+		document.getElementById("priceOfFood").innerHTML = t3+""
+		var t4 = n4 * p4
+		document.getElementById("priceOfMed").innerHTML = ""+t4+""
+		var t5 = n5 * p5
+		document.getElementById("priceOfTank").innerHTML = t5+""
+		var t6 = n6 * p6
+		document.getElementById("priceOfAqu").innerHTML = t6+""
+		
+		var t7 = t1+t2+t3+t4+t5+t6
+		document.getElementById("totalPrice").innerHTML = t7+""
+		
+		
+		
+	}
+</script>
+<!-- InstanceEndEditable -->
+<link href="CSS/fish_tastic.css" rel="stylesheet" type="text/css">
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->    
+</head>
+
+<body>
+
+<div id="Logo_div" align="center">
+ <a href="index.html"><img src="Image/logo.png" alt="fish" id="logoOfFish"></a>
+  <span id="Logo"><em><strong>Fish &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Tastic</strong></em></span>
+   <div class="social_media">
+     <span>Visit us :</span>
+     <a href="https://www.facebook.com/Fish-Tastic-552027478286738/?skip_nax_wizard=true"><img src="Image/social_facebook_box_blue.png" alt="Facebook" width="30" height="30"></a>
+     <a href="https://www.instagram.com/weare_fishtastic/"><img src="Image/Multi-Color_Logo_thumbnail200.png" alt="Instagram" width="30" height="30"></a> 
+     <a href="https://twitter.com/?lang=en"><img src="Image/Twitter-icon.png" alt="Twitter" width="30" height="30"></a> 
+   </div> 
+<form id="search_bar"> 
+ <input type="text" name="input" style="border:1px solid; border-style:inset">
+ <input type="button" value="search">
+</form>
+</div>
+<div>
+<ul id="Nav_bar_left">
+<li><a class="Nav_link" href="index.html"><img src="Image/home.png" alt="Home"/></a></li>
+<li><a class="Nav_link" href="about_us.html"><img src="Image/about_us.png" alt="about us"/></a></li>
+<li><a class="Nav_link" href="events.html"><img src="Image/events.png"  alt="events"/></a></li>
+</ul>
+
+
+<ul id="Nav_bar_right">
+<li><a class="Nav_link" href="contact%20us.html"><img src="Image/Contact_us.png"  alt="Contact us" height="40"/></a></li>
+<div id="drop">
+<li><a id="dropbtn" href="#"><img src="Image/services.png" alt="Services"/></a>
+   <ul class="dropdown">
+      <li class="drop_block"><a class="dropdown_content" href="#">Delivery</a></li>
+      <li class="drop_block"><a class="dropdown_content" href="#">Consultation</a></li>
+      <li class="drop_block"><a class="dropdown_content" href="#">Exchange</a></li>
+   </ul>
+</li>
+</div>
+
+<li><a class="Nav_link" href="faq.html"><img src="Image/faq.png" alt="FAQ"/></a></li>
+</ul>
+</div>
+
+<!-- InstanceBeginEditable name="content" -->
+
+
+<div id="Sec_body" align="center">
+  <hr style="border:groove;">
+  <div style="width:80%; ">
+    <h2 style="color:#FFFFFF">Online Order</h2>
+     <hr>
+     <form>
+       <table width="800" height="500" border="1" style="color:#FFFFFF; text-align:center">
+  <tbody>
+    <tr>
+      <td>Product no.</td>
+      <td>Products</td>
+      <td>Unit price</td>
+      <td>Quantity</td>
+      <td>Price($)</td>
+    </tr>
+    
+    <tr>
+      <td style="text-align:left">1.Salt Water Fish</td>     
+      <td><select id="selSalt" onChange="showPriceOfSalt()" >
+         <option value="S01">Clown fish</option>
+         <option value="S02" selected>Butterfly fish</option>
+         <option value="S03">Angel fish</option>
+         <option value="S04">Dory fish</option>             
+      </select></td>      
+      <td>$<span id="showPriceOfSalt">32.00</span>/fish</td>
+      <td id="showNumOfSalt"><input type="button" onClick="minusNumber(1)" value="-"/>&nbsp;&nbsp;&nbsp;<span id="numOfSalt">0</span>&nbsp;&nbsp;&nbsp;<input type="button" onClick="plusNumber(1)" value="+"/></td> 
+      <td id="priceOfSalt"></td>
+    </tr>
+    
+    
+    <tr>
+      <td style="text-align:left">2.Fresh Water Fish</td>
+      <td><select  id="selectFresh" onChange="showPriceOfFresh()">
+         <option value="A01" >Guppy</option>
+         <option value="A02" selected>Fantail goldfish</option>
+         <option value="A03">Oranda goldfish</option>
+         <option value="A04">Neon Tetra</option>             
+      </select></td>
+        <td>$<span id="showPriceOfFresh">1.00</span>/fish</td>
+    <td id="showNumOfFresh"><input type="button" onClick="minusNumber(2)" value="-"/>&nbsp;&nbsp;&nbsp;<span id="numOfFresh">0</span>&nbsp;&nbsp;&nbsp;<input type="button" onClick="plusNumber(2)" value="+"/></td> 
+      <td id="priceOfFresh">&nbsp;</td>
+    </tr>
+    
+    
+    <tr>
+      <td style="text-align:left">3.Fish Food</td>
+      <td><select  id="selectFood" onChange="showPriceOfFood()">
+         <option value="B01" >Tropical Flakes</option>
+         <option value="B02" selected>Algae Wafers</option>
+         <option value="B03">Bloodworms</option>         
+      </select></td>
+      <td>$<span id="showPriceOfFood">11.99</span></td>
+      <td id="showNumOfFood"><input type="button" onClick="minusNumber(3)" value="-"/>&nbsp;&nbsp;&nbsp;<span id="numOfFood">0</span>&nbsp;&nbsp;&nbsp;<input type="button" onClick="plusNumber(3)" value="+" /></td> 
+      <td id="priceOfFood">&nbsp;</td>
+    </tr>
+    
+    
+      <tr>
+      <td style="text-align:left">4.Fish Medicine</td>
+      <td><select  id="selectMed" onChange="showPriceOfMed()">
+         <option value="M01" >HEX SHIELD(125g)</option>
+         <option value="M02" selected>Wonder Shell</option>
+         <option value="M03">General Cure</option>         
+      </select></td>
+       <td>$<span id="showPriceOfMed">2.99</span></td>
+       <td id="showNumOfMed"><input type="button" onClick="minusNumber(4)" value="-"/>&nbsp;&nbsp;&nbsp;<span id="numOfMed">0</span>&nbsp;&nbsp;&nbsp;<input type="button" onClick="plusNumber(4)" value="+"/></td> 
+      <td id="priceOfMed">&nbsp;</td>
+    </tr>
+    
+    
+     <tr>
+      <td style="text-align:left">5.Fish Tank</td>
+      <td><select  id="selectTank" onChange="showPriceOfTank()">
+         <option value="T01" >Regular Fish Tank</option>
+         <option value="T02" selected>Premium Fish Tank</option>
+         <option value="T03">Glass Fish Bowl(7L)</option> 
+         <option value="T04">600 Rio Water Pump</option>           
+      </select></td>
+       <td>$<span id="showPriceOfTank">349.00</span></td>
+      <td id="showNumOfTank"><input type="button" onClick="minusNumber(5)" value="-"/>&nbsp;&nbsp;&nbsp;<span id="numOfTank">0</span>&nbsp;&nbsp;&nbsp;<input type="button" onClick="plusNumber(5)" value="+"/></td> 
+      <td id="priceOfTank">&nbsp;</td>
+    </tr>
+    
+     <tr>
+      <td style="text-align:left">6.Aquarium Decorations</td>
+      <td><select  id="selectAqu" onChange="showPriceOfAqu()">
+         <option value="D01" >Artificial Water Plant</option>
+         <option value="D02" selected>Artificial Corals</option>
+         <option value="D03">Ceramic Castle House</option>          
+      </select></td>
+       <td>$<span id="showPriceOfAqu">3.00</span></td>
+      <td id="showNumOfAqu"><input type="button" onClick="minusNumber(6)" value="-"/>&nbsp;&nbsp;&nbsp;<span id="numOfAqu">0</span>&nbsp;&nbsp;&nbsp;<input type="button" onClick="plusNumber(6)" value="+"/></td> 
+      <td id="priceOfAqu">&nbsp;</td>
+    </tr>
+    
+    
+    <tr>
+      <td colspan="3"><input type="button" value="Billing" onClick="calcuPrice()"/>&nbsp;&nbsp;&nbsp;<input type="button" value="Reset" onClick="resetQuantity()"/></td>
+      <td colspan="2">Total price:$<span id="totalPrice">0</span></td>     
+    </tr>
+  </tbody>
+  <tr>
+   <td colspan="4" style="text-align:left"> <span style="color:#FFFFFF;">Prompt:If you buy more than $50, we provide free delivery!</span> 
+</td>
+  <td><input type="button" value="Next>"></td>
+  </tr>
+  </table> 
+  </form>  
+ 
+  </div>
+</div>
+
+<!-- InstanceEndEditable -->
+
+  
+<div id="footer">
+<hr>
+<p>Group Three© 2016</p></div>
+</body>
+<!-- InstanceEnd --></html>
